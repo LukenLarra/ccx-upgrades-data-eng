@@ -8,7 +8,7 @@ on:
 jobs:
   bdd:
     name: BDD tests
-    uses: LukenLarra/processing-tools/.github/workflows/bdd.yaml@feature-parallel-execution
+    uses: LukenLarra/processing-tools/.github/workflows/bdd.yaml@master
     with:
       service: data-engineering-service
       use_mock-oauth2-server: true
