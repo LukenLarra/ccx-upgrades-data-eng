@@ -13,3 +13,4 @@ jobs:
       service: data-engineering-service
       use_mock-oauth2-server: true
       install_service: true
+      parallel_execution: true
