@@ -15,7 +15,7 @@ repos:
       - id: check-added-large-files
 
   - repo: https://github.com/shellcheck-py/shellcheck-py
-    rev: v0.11.0.1
+    rev: v0.11.0.1-1
     hooks:
       - id: shellcheck
         # Exclude checks that are commonly problematic in organization scripts
@@ -26,13 +26,13 @@ repos:
         args: ['--exclude=SC1090,SC2086,SC2034,SC1091']
 
   - repo: https://github.com/golangci/golangci-lint
-    rev: v2.11.4
+    rev: v2.13.2
     hooks:
       - id: golangci-lint-config-verify
       - id: golangci-lint-full
 
   - repo: https://github.com/RedHatInsights/processing-tools
-    rev: v0.1.0
+    rev: v0.4.5
     hooks:
       - id: abcgo
         args: ['--threshold=64']
@@ -40,7 +40,7 @@ repos:
       - id: go-version-consistency
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.15.8
+    rev: v0.16.6
     hooks:
       # Adding a set of rules to ruff check to match pyupgrade rules
       - id: ruff-check
